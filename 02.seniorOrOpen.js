@@ -12,6 +12,7 @@ Example
 input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 output = ["Open", "Open", "Senior", "Open", "Open", "Senior"] */
 
+// 1st solution
 function openOrSenior(data) {
   let output = data.map((pair) => {
     if (pair[0] >= 55 && pair[1] > 7) {
@@ -21,6 +22,13 @@ function openOrSenior(data) {
     }
   });
   return output;
+}
+
+// 2nd solution
+function openOrSenior(data) {
+  return data.map(([age, handicap]) =>
+    age > 54 && handicap > 7 ? "Senior" : "Open"
+  );
 }
 
 console.log(
