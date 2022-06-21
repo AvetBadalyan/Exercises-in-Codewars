@@ -66,3 +66,18 @@ For example (Input --> Output):
 4 --> 0 (because 4 is already a one-digit number)
 
 [06.PersistentBugger.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/06.%20Persistent%20Bugger.js)
+
+## 7. Moving Zeros To The End
+
+ Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0] 
+
+[07.MovingZerosToTheEnd.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/07.MovingZerosToTheEnd.js)
+
+## 8. Stop gninnipS My sdroW!
+
+ Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
+
+[08.ReverseLongWords.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/08.ReverseLongWords.js)
