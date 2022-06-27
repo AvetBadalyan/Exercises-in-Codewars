@@ -15,15 +15,15 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
 Club has two categories of membership, Senior and Open.To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26;
 
 Input
-Input will consist of a list of pairs. Each pair contains information for a single potential member. 
+Input will consist of a list of pairs. Each pair contains information for a single potential member.
 Information consists of an integer for the person's age and an integer for the person's handicap.
 
 Output
-Output will consist of a list of string values (in Haskell and C: Open or Senior) 
+Output will consist of a list of string values (in Haskell and C: Open or Senior)
 stating whether the respective member is to be placed in the senior or open category.
 
 Example
-input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+input = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 [02.seniorOrOpen.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/02.seniorOrOpen.js)
@@ -31,7 +31,7 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 ## 3. Friends
 
 Make a program that filters a list of strings and returns a list with only your friends name in it.
-If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! 
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours!
 Otherwise, you can be sure he's not...
 
 Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
@@ -69,15 +69,91 @@ For example (Input --> Output):
 
 ## 7. Moving Zeros To The End
 
- Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
-moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0] 
+Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 
 [07.MovingZerosToTheEnd.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/07.MovingZerosToTheEnd.js)
 
 ## 8. Stop gninnipS My sdroW!
 
- Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
 
 Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
 [08.ReverseLongWords.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/08.ReverseLongWords.js)
+
+## 9. Duplicate Encoder
+
+The goal of this exercise is to convert a string to a new string where each character in the new string is "("
+if that character appears only once in the original string, or ")"
+if that character appears more than once in the original string.
+Ignore capitalization when determining if a character is a duplicate.
+
+Examples
+"din" => "((("
+"recede" => "()()()"
+"Success" => ")())())"
+"(( @" => "))(("
+
+[Duplicate Encoder](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/09.DuplicateEncoder.js)
+
+## 10. Multiples of 3 or 5
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
+Note: If the number is a multiple of both 3 and 5, only count it once.
+
+[Multiples of 3 or 5](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/10.%20MultiplesOf3Or5.js)
+
+## 11. Vowels in String
+
+Return the number (count) of vowels in the given string.
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+The input string will only consist of lower case letters and/or spaces.
+
+[Vowels in String](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/11.VowerCount.js)
+
+## 12. Pagination Helper
+
+The constructor takes in an array of items and a integer indicating how many items fit within a single page
+
+- returns the number of items within the entire collection
+- returns the number of pages
+- returns the number of items on the current page. page_index is zero based.
+  this method should return -1 for pageIndex values that are out of range
+- determines what page an item is on. Zero based indexes
+  this method should return -1 for itemIndex values that are out of range
+
+[Pagination Helper](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/12.pagination.js)
+
+## 13. Disemvowel Trolls
+
+Trolls are attacking your comment section!
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+Note: for this kata y isn't considered a vowel.
+
+[Disemvowel Trolls](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/13.RemoveVowels.js)
+
+## 14. Who likes it?
+
+You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
+[] --> "no one likes this"
+["Peter"] --> "Peter likes this"
+["Jacob", "Alex"] --> "Jacob and Alex like this"
+["Max", "John", "Mark"] --> "Max, John and Mark like this"
+["Alex", "Jacob", "Mark", "Max"] --> "Alex, Jacob and 2 others like this"
+
+[Facebook Likes](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/14.FacebookLikes.js)
+
+## 15. Create a Phone Number
+
+Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+Example
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+The returned format must be correct in order to complete this challenge.
+Don't forget the space after the closing parentheses!
+
+[Create a Phone Number](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/15.CreatePhoneNumber.js)
