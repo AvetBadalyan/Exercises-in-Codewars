@@ -158,3 +158,16 @@ Don't forget the space after the closing parentheses!
 
 [Create a Phone Number](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/15.CreatePhoneNumber.js)
 
+## 16. Make promises to print in console in the right order
+
+setTimeout(() => console.log(1), 3000);
+setTimeout(() => console.log(2), 2000);
+setTimeout(() => console.log(3), 1000);
+
+[Promises in the right order](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/16.Promises.js)
+
+## 17. Bubble sort implementation
+
+Sort the array without using sort() method
+
+[Array sort implementation](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/17.bubleSort.js)
