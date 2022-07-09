@@ -33,7 +33,6 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 Make a program that filters a list of strings and returns a list with only your friends name in it.
 If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours!
 Otherwise, you can be sure he's not...
-
 Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 Note: keep the original order of the names in the output.
 
@@ -140,6 +139,7 @@ Note: for this kata y isn't considered a vowel.
 
 You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
+
 [] --> "no one likes this"
 ["Peter"] --> "Peter likes this"
 ["Jacob", "Alex"] --> "Jacob and Alex like this"
@@ -151,8 +151,8 @@ Implement the function which takes an array containing the names of people that 
 ## 15. Create a Phone Number
 
 Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
-Example
-createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+Example: createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
 The returned format must be correct in order to complete this challenge.
 Don't forget the space after the closing parentheses!
 
@@ -189,7 +189,6 @@ image - https://www.haan.lu/files/2513/8347/2456/snail.png
 
 Digital root is the recursive sum of all the digits in a number.
 Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
-
 Examples
 16 --> 1 + 6 = 7
 942 --> 9 + 4 + 2 = 15 --> 1 + 5 = 6
@@ -197,7 +196,7 @@ Examples
 
 [number digits recursion sum](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/19.recursionDigits.js)
 
-## 19. Array.diff
+## 20. Array.diff
 
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 It should remove all values from list a, which are present in list b keeping their order.
