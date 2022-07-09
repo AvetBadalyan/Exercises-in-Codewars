@@ -171,3 +171,38 @@ setTimeout(() => console.log(3), 1000);
 Sort the array without using sort() method
 
 [Array sort implementation](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/17.bubleSort.js)
+
+## 18. Snail from matrix
+
+Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
+
+array = [[1,2,3],
+         [4,5,6],
+         [7,8,9]]
+snail(array) #=> [1,2,3,6,9,8,7,4,5]
+
+image - https://www.haan.lu/files/2513/8347/2456/snail.png
+
+[Snail from array](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/18.snail.js)
+
+## 19. Sum of Digits / Digital Root
+
+Digital root is the recursive sum of all the digits in a number.
+Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+Examples
+16 --> 1 + 6 = 7
+942 --> 9 + 4 + 2 = 15 --> 1 + 5 = 6
+132189 --> 1 + 3 + 2 + 1 + 8 + 9 = 24 --> 2 + 4 = 6
+
+[number digits recursion sum](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/19.recursionDigits.js)
+
+## 19. Array.diff
+
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+It should remove all values from list a, which are present in list b keeping their order.
+arrayDiff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+[filter array from the number](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/20.arrayIncludes.js)
