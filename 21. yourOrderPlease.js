@@ -19,3 +19,20 @@ function order(words) {
 }
 
 console.log(order("is2 Thi1s T4est 3a"));
+
+// 2nd solution
+
+function order2(words) {
+  let array = words.split(" ");
+  let sortedArray = [];
+  for (i = 0; i <= array.length; i++) {
+    for (j = 0; j < array.length; j++) {
+      if (array[j].indexOf(i) >= 0) {
+        sortedArray.push(array[j]);
+      }
+    }
+  }
+  return sortedArray.join(" ");
+}
+
+console.log(order2("is2 Thi1s T4est 3a"));
