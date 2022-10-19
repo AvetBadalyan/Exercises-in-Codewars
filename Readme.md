@@ -205,3 +205,60 @@ If a value is present in b, all of its occurrences must be removed from the othe
 arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 [filter array from the number](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/20.arrayIncludes.js)
+
+## 21. your order please
+
+Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+
+Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+
+If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.
+
+Examples
+"is2 Thi1s T4est 3a" --> "Thi1s is2 3a T4est"
+"4of Fo1r pe6ople g3ood th5e the2" --> "Fo1r the2 g3ood 4of th5e pe6ople"
+
+[your order please](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/21.%20yourOrderPlease.js)
+
+## 22. Max and Min
+
+you are given a string of space separated numbers, and have to return the highest and lowest number.
+Examples
+highAndLow("1 2 3 4 5"); // return "5 1"
+highAndLow("1 2 -3 4 5"); // return "5 -3"
+highAndLow("1 9 3 4 -5"); // return "9 -5"
+
+[Max and Min](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/22.MaxAndMin.js)
+
+## 23. Descending order
+
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+Examples:
+Input: 42145 Output: 54421
+Input: 145263 Output: 654321
+Input: 123456789 Output: 987654321
+
+[Descending order](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/23.DescendingORder.js)
+
+## 24. Get the Middle
+
+You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+#Examples:
+getMiddle("test") should return "es"
+getMiddle("testing") should return "t"
+getMiddle("middle") should return "dd"
+getMiddle("A") should return "A"
+
+[Get the Middle](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/24.getTheMiddle.js)
+
+## 25. Find the Outlier
+
+Find The Parity Outlier
+You are given an array (which will have a length of at least 3, but could be very large) containing integersegers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+Examples
+[2, 4, 0, 100, 4, 11, 2602, 36]
+Should return: 11 (the only odd number)
+[160, 3, 1719, 19, 11, 13, -21]
+Should return: 160 (the only even number)
+
+[Find the Outlier](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/25.findOutflier.js)
