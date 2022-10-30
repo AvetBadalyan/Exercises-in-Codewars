@@ -36,7 +36,7 @@ Otherwise, you can be sure he's not...
 Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 Note: keep the original order of the names in the output.
 
-[03.friends.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/03.friends.js)
+[03.Mumbling.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/03.friends.js)
 
 ## 4. Find the index in the Array where Left === Right
 
