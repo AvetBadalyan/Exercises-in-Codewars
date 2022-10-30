@@ -28,15 +28,17 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 [02.seniorOrOpen.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/02.seniorOrOpen.js)
 
-## 3. Friends
+## 3. Mumbling
 
-Make a program that filters a list of strings and returns a list with only your friends name in it.
-If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours!
-Otherwise, you can be sure he's not...
-Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
-Note: keep the original order of the names in the output.
+This time no story, no theory. The examples below show you how to write function accum:
 
-[03.Mumbling.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/03.friends.js)
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+[03.Mumbling.js](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/03.Mumbling.js)
 
 ## 4. Find the index in the Array where Left === Right
 
@@ -262,3 +264,56 @@ Should return: 11 (the only odd number)
 Should return: 160 (the only even number)
 
 [Find the Outlier](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/25.findOutflier.js)
+
+## 26. Jaden Casing Strings
+
+Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
+
+Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+Example:
+
+Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+Jaden-Cased: "How Can Mirrors Be Real If Our Eyes Aren't Real"
+
+[Jaden Casing Strings](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/26.JadenSmith.js)
+
+## 27. Take a Ten Minutes Walk
+
+You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']). You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
+
+[Take a Ten Minutes Walk](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/27.TenMinutesWalk.js)
+
+## 28. Credit Card Mask
+
+Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+Your task is to write a function maskify, which changes all but the last four characters into '#'.
+Examples
+"4556364607935616" --> "############5616"
+"64607935616" --> "#######5616"
+"1" --> "1"
+"" --> ""
+
+[Credit Card Mask](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/28.CreditCardMask.js)
+
+## 29. Sum of two lowest positive integers
+
+Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[Sum of two lowest positive integers](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/29.TwoSmallestNumbersSum.js)
+
+## 30. Beginner Series #3 Sum of Numbers
+
+Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
+Note: a and b are not ordered!
+Examples (a, b) --> output (explanation)
+(1, 0) --> 1 (1 + 0 = 1)
+(1, 2) --> 3 (1 + 2 = 3)
+(0, 1) --> 1 (0 + 1 = 1)
+(1, 1) --> 1 (1 since both are same)
+(-1, 0) --> -1 (-1 + 0 = -1)
+(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+
+[Beginner Series #3 Sum of Numbers](https://github.com/AvetBadalyan/Exercises-in-Codewars/blob/main/30.SumOfNUmbers.js)
